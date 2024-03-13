@@ -1,0 +1,159 @@
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting the background image and styles for the body */
+body {
+    background-image: url('./images/wp5762696-watch-dogs-logo-wallpapers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0a310c; 
+}
+
+/* Styling the container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(72, 240, 72, 0.6); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Styling the header with the to-do icon */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%; 
+}
+
+h1 {
+    font-size: 28px;
+}
+
+/* Styling the task input and button */
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #0a310c;
+    border-radius: 5px;
+    background-color: #0a310c;
+}
+
+.task-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.task-input button {
+    background-color: #21f02b;
+    color: #0a310c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #0a310c;
+    color: #21f02b;
+}
+
+/* Styling the task list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #21f02b;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #0a310c;
+    border: 1px solid #0a310c;
+    border-radius: 5px;
+}
+
+li span {
+    flex: 1; 
+}
+
+li button {
+    background-color: #21f02b;
+    color: #0a310c;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #0a310c;
+    color: #21f02b;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    
+    
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    header img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .task-input input[type="text"] {
+        font-size: 14px;
+    }
+
+    .task-input button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    li button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    body {
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
